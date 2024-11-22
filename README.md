@@ -5,21 +5,22 @@
 
 ## Purpose:
 
-- Help people Explore Language.
+- Help people to explore Language.Provide you with everything you need to master Japanese words, enabling you to hold basic conversations and speak Japanese with confidence.
 
 
 
 ## key feature
-- Dynamic.
-- React feature.
-- Prounciation.
-- Responsive.
+- Authentication and User Management.
+- Dynamic Data Loading with Filtering.
+- Interactive UI Elements.
+- Private Route.
 
 ##  npm packages:
 
 - animate.css.
 - react toastify.
-- react countup.
+- react icons.
+- react count-up.
 
 
 
