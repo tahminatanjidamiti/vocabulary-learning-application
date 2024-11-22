@@ -39,7 +39,7 @@ const router = createBrowserRouter([
                     {
                         path: "/start_learning/:id",
                         element: <PrivateRoute><SingleLesson></SingleLesson></PrivateRoute>,
-                        loader: () => fetch('/vocabulary.json'),
+                        loader: ({params}) => fetch('/vocabulary.json'),
                     },
                 ]
             },
