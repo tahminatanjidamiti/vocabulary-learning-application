@@ -11,6 +11,7 @@ import AboutUs from "../components/AboutUs";
 import MyProfile from "../components/MyProfile";
 import LoadLesson from "../components/LoadLesson";
 import SingleLesson from "../components/SingleLesson";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -30,27 +31,27 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: "/start_learning/lessons",
-                        element: <LoadLesson></LoadLesson>,
+                        element: <PrivateRoute><LoadLesson></LoadLesson></PrivateRoute>,
                         loader: () => fetch('/vocabulary.json'),
                     },
                     {
                         path: "/start_learning/:id",
-                        element: <SingleLesson></SingleLesson>,
+                        element: <PrivateRoute><SingleLesson></SingleLesson></PrivateRoute>,
                         loader: () => fetch('/vocabulary.json'),
                     },
                 ]
             },
             {
                 path: "/tutorials",
-                element: <Tutorials></Tutorials>
+                element: <PrivateRoute><Tutorials></Tutorials></PrivateRoute>
             },
             {
                 path: "/about_us",
-                element: <AboutUs></AboutUs>
+                element: <PrivateRoute><AboutUs></AboutUs></PrivateRoute>
             },
             {
                 path: "/my_profile",
-                element: <MyProfile></MyProfile>
+                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
             },
             {
                 path: "auth",
