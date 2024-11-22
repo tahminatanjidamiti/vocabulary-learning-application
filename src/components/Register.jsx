@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const Register = () => {
-    const {createNewUser, setUser, updateUserProfile} = useContext(AuthContext);
+    const {createNewUser, setUser, updateUserProfile, handleGoogleLogin} = useContext(AuthContext);
     const [error, setError] = useState({});
     const navigate = useNavigate();
     const handleSubmit = (e) => {
@@ -19,6 +21,10 @@ const Register = () => {
         const email = form.get("email");
         const password = form.get("password");
         // console.log({name, photo, email,  password });
+        if(!/^(?=.*[A-Z])(?=.*[a-z]).{6,}$/.test(password)){
+            toast.error("Password invalid!");
+            return;
+        }
         createNewUser(email, password)
         .then(result => {
             const user = result.user;
@@ -84,6 +90,7 @@ const Register = () => {
                     <Link to="/" className="btn btn-neutral rounded-none">Register</Link>
                 </div>
             </form>
+            <button className='flex justify-center items-center mb-2 text-3xl' onClick={handleGoogleLogin}><FcGoogle /></button>
             <p className='text-center font-semibold'>Already Have An Account ? <Link className="text-red-500" to="/auth/login">Login</Link></p>
         </div>
     </div>

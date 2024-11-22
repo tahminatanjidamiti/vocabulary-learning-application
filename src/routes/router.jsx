@@ -12,6 +12,8 @@ import MyProfile from "../components/MyProfile";
 import LoadLesson from "../components/LoadLesson";
 import SingleLesson from "../components/SingleLesson";
 import PrivateRoute from "./PrivateRoute";
+import ForgetPassword from "../components/ForgetPassword";
+import UpdatedProfile from "../components/UpdatedProfile";
 
 
 const router = createBrowserRouter([
@@ -51,7 +53,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/my_profile",
-                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
+            },
+            {
+                path: "/updated",
+                element: <UpdatedProfile></UpdatedProfile>
             },
             {
                 path: "auth",
@@ -64,6 +70,10 @@ const router = createBrowserRouter([
                     {
                         path: "/auth/register",
                         element: <Register></Register>
+                    },
+                    {
+                        path: "/auth/forget",
+                        element: <ForgetPassword></ForgetPassword>
                     },
                 ]
             },
