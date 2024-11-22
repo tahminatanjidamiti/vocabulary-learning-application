@@ -14,3 +14,7 @@ a.active{
   padding: 8px;
   border-radius: 8px;
 }
+
+.animate__fadeInDown {
+  animation-duration: 5s;
+}

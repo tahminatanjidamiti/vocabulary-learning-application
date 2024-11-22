@@ -5,6 +5,8 @@ import ErrorPage from "../components/ErrorPage";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import Tutorials from "../components/Tutorials";
+import StartLearning from "../components/StartLearning";
 
 
 const router = createBrowserRouter([
@@ -18,39 +20,40 @@ const router = createBrowserRouter([
                 element: <HomeLayout></HomeLayout>,
 
             },
-        ]
-    },
-    {
-        path: "/start_learning",
-        element: <h1>Start-learning</h1>
-    },
-    {
-        path: "/tutorials",
-        element: <h1>Tutorials</h1>
-    },
-    {
-        path: "/about_us",
-        element: <h1>About_us</h1>
-    },
-    {
-        path: "/my_profile",
-        element: <h1>My_profile</h1>
-    },
-    {
-        path: "auth",
-        element: <AuthLayout></AuthLayout>,
-        children: [
             {
-                path: "/auth/login",
-                element: <Login></Login>
+                path: "/start_learning",
+                element: <StartLearning></StartLearning>
             },
             {
-                path: "/auth/register",
-                element: <Register></Register>
+                path: "/tutorials",
+                element: <Tutorials></Tutorials>
             },
+            {
+                path: "/about_us",
+                element: <h1>About_us</h1>
+            },
+            {
+                path: "/my_profile",
+                element: <h1>My_profile</h1>
+            },
+            {
+                path: "auth",
+                element: <AuthLayout></AuthLayout>,
+                children: [
+                    {
+                        path: "/auth/login",
+                        element: <Login></Login>
+                    },
+                    {
+                        path: "/auth/register",
+                        element: <Register></Register>
+                    },
+                ]
+            },
+        
         ]
     },
-
+    
 ]);
 
 
