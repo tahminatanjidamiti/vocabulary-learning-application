@@ -309,14 +309,14 @@
       },
       {
         "id": "word029",
-        "word": "難しい",
-        "pronunciation": "muzukashii",
-        "meaning": "difficult",
-        "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "word": "店",
+        "pronunciation": "mise",
+        "meaning": "shop/store",
+        "part_of_speech": "noun",
+        "difficulty": "easy",
         "lesson_no": 3,
-        "when_to_say": "Used to describe something challenging.",
-        "example": "この質問は難しいです。 (kono shitsumon wa muzukashii desu.) - This question is difficult."
+        "when_to_say": "Used to talk about shops or stores.",
+        "example": "その店は安いです。 (sono mise wa yasui desu.) - That shop is cheap."
       },
       {
         "id": "word030",
@@ -419,14 +419,14 @@
       },
       {
         "id": "word039",
-        "word": "店",
-        "pronunciation": "mise",
-        "meaning": "shop/store",
-        "part_of_speech": "noun",
-        "difficulty": "easy",
+        "word": "難しい",
+        "pronunciation": "muzukashii",
+        "meaning": "difficult",
+        "part_of_speech": "adjective",
+        "difficulty": "medium",
         "lesson_no": 4,
-        "when_to_say": "Used to talk about shops or stores.",
-        "example": "その店は安いです。 (sono mise wa yasui desu.) - That shop is cheap."
+        "when_to_say": "Used to describe something challenging.",
+        "example": "この質問は難しいです。 (kono shitsumon wa muzukashii desu.) - This question is difficult."
       },
       {
         "id": "word040",

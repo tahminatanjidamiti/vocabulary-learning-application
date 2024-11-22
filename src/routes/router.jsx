@@ -7,6 +7,10 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import Tutorials from "../components/Tutorials";
 import StartLearning from "../components/StartLearning";
+import AboutUs from "../components/AboutUs";
+import MyProfile from "../components/MyProfile";
+import LoadLesson from "../components/LoadLesson";
+import SingleLesson from "../components/SingleLesson";
 
 
 const router = createBrowserRouter([
@@ -22,7 +26,19 @@ const router = createBrowserRouter([
             },
             {
                 path: "/start_learning",
-                element: <StartLearning></StartLearning>
+                element: <StartLearning></StartLearning>,
+                children: [
+                    {
+                        path: "/start_learning/lessons",
+                        element: <LoadLesson></LoadLesson>,
+                        loader: () => fetch('/vocabulary.json'),
+                    },
+                    {
+                        path: "/start_learning/:id",
+                        element: <SingleLesson></SingleLesson>,
+                        loader: () => fetch('/vocabulary.json'),
+                    },
+                ]
             },
             {
                 path: "/tutorials",
@@ -30,11 +46,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about_us",
-                element: <h1>About_us</h1>
+                element: <AboutUs></AboutUs>
             },
             {
                 path: "/my_profile",
-                element: <h1>My_profile</h1>
+                element: <MyProfile></MyProfile>
             },
             {
                 path: "auth",
