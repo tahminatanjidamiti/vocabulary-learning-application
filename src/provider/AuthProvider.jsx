@@ -4,10 +4,11 @@ import app from '../firebase/firebase.init';
 
 
 
+
 export const AuthContext = createContext();
 const auth = getAuth(app);
 
-const AuthProvider = ({children}) => {
+const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const googleProvider = new GoogleAuthProvider();
@@ -47,7 +48,8 @@ const AuthProvider = ({children}) => {
         userLogin,
         loading,
         updateUserProfile,
-        handleGoogleLogin
+        handleGoogleLogin,
+
     }
     return (
         <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

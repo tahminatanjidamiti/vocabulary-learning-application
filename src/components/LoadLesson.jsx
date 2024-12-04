@@ -21,7 +21,7 @@ const LoadLesson = () => {
 
     return (
         <div>
-            <div className='md:container mx-auto grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5'>
+            <div className='p-5 md:container mx-auto grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5'>
                 {
                         data.map(lesson => <NavLink  to={`/start_learning/${lesson.id}`} className={`btn border-none ${getButtonColor(lesson.difficulty)}`} key={lesson.id}>{`Lesson: ${lesson.lesson_no}`}</NavLink>)  
                 }

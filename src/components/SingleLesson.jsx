@@ -28,7 +28,7 @@ const SingleLesson = () => {
 
     return (
         <div>
-            <div className='w-80 mx-auto py-10'>
+            <div className='w-96 mx-auto py-10'>
                 <div className="card bg-base-100 shadow-xl border-2">
                     <div className="card-body text-center">
                         <h2 className="card-title flex justify-center items-center">Word: {selectedLesson?.word}</h2>
@@ -48,7 +48,7 @@ const SingleLesson = () => {
             {showModal && selectedLesson && (
                 <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50'>
                     <div className='bg-white p-6 rounded-lg max-w-md mx-auto text-center'>
-                        <h1 className='text-2xl font-semibold mb-2'>{selectedLesson?.word}</h1>
+                        <h1 onClick={() => pronounceWord(selectedLesson?.word)} className='text-2xl font-semibold mb-2'>{selectedLesson?.word}</h1>
                         <p className='text-[#09080F99] font-medium'>{selectedLesson?.meaning}</p>
                         <p className='text-[#09080F99] font-medium'>When to say: {selectedLesson?.when_to_say}</p>
                         <p className='text-[#09080F99] font-medium'>Example: {selectedLesson?.example}</p>

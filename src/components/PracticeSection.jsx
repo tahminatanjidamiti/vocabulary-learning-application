@@ -1,6 +1,11 @@
 import React from 'react';
 
 const PracticeSection = () => {
+    const pronounceWord = (word) => {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'ja-JP';
+        window.speechSynthesis.speak(utterance);
+    };
     return (
         <div className='my-20'>
             <div className='text-center items-center'>
@@ -14,21 +19,21 @@ const PracticeSection = () => {
                     <input type="radio" name="my-accordion-3" defaultChecked />
                     <div className="collapse-title text-xl font-medium">Hello, how are you?</div>
                     <div className="collapse-content">
-                        <p>こんにちは お元気ですか？</p>
+                        <p onClick={() => pronounceWord('こんにちは お元気ですか')}>こんにちは お元気ですか？</p>
                     </div>
                 </div>
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium">I am Good!</div>
                     <div className="collapse-content">
-                        <p>私は元気です！</p>
+                        <p onClick={() => pronounceWord('私は元気です')}>私は元気です！</p>
                     </div>
                 </div>
                 <div className="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium">Thank You.</div>
                     <div className="collapse-content">
-                        <p>ありがとう.</p>
+                        <p onClick={() => pronounceWord('ありがとう')}>ありがとう.</p>
                     </div>
                 </div>
             </div>
