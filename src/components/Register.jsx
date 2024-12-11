@@ -1,13 +1,28 @@
 import React, { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 const Register = () => {
-    const {createNewUser, setUser, updateUserProfile, handleGoogleLogin} = useContext(AuthContext);
+    const {createNewUser, setUser, updateUserProfile} = useContext(AuthContext);
     const [error, setError] = useState({});
+    const location = useLocation();
     const navigate = useNavigate();
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleGoogleLogin = () => {
+        signInWithPopup(auth, googleProvider)
+        .then(result => {
+            const user = result.user;
+            setUser(user);
+            navigate(location?.state ? location.state : "/");
+        })
+        .catch(err => {
+            setError({ ...error, login: err.code })
+        })
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
         //get form data
@@ -31,7 +46,7 @@ const Register = () => {
             setUser(user);
             updateUserProfile({displayName: name, photoURL: photo})
             .then(() => {
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
             })
             .catch((err) => {
                 // console.log(err);
@@ -87,7 +102,7 @@ const Register = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <Link to="/" className="btn btn-neutral rounded-none">Register</Link>
+                    <button type='submit' className="btn btn-neutral rounded-none">Register</button>
                 </div>
             </form>
             <button className='flex justify-center items-center mb-2 text-3xl' onClick={handleGoogleLogin}><FcGoogle /></button>
