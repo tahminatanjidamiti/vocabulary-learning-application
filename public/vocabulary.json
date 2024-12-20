@@ -440,6 +440,116 @@
         "example": "毎朝電車に乗ります。 (maiasa densha ni norimasu.) - I ride the train every morning."
       },
       {
+        "id": "word041",
+        "word": "励まし",
+        "pronunciation": "hagemashi",
+        "meaning": "encouragement",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when expressing support or motivation to someone.",
+        "example": "友達の励ましに感謝しています。 (tomodachi no hagemashi ni kansha shiteimasu.) - I am grateful for my friend's encouragement."
+      },
+      {
+        "id": "word042",
+        "word": "習慣",
+        "pronunciation": "shuukan",
+        "meaning": "habit, custom",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when talking about regular practices or traditions.",
+        "example": "健康的な習慣を身につけたいです。 (kenkouteki na shuukan o mi ni tsuketai desu.) - I want to develop healthy habits."
+      },
+      {
+        "id": "word043",
+        "word": "努力",
+        "pronunciation": "doryoku",
+        "meaning": "effort",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when discussing putting in hard work towards a goal.",
+        "example": "成功には努力が必要です。 (seikou ni wa doryoku ga hitsuyou desu.) - Success requires effort."
+      },
+      {
+        "id": "word044",
+        "word": "挑戦",
+        "pronunciation": "chousen",
+        "meaning": "challenge",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when describing taking on a difficult task or goal.",
+        "example": "新しい挑戦を楽しみにしています。 (atarashii chousen o tanoshimi ni shiteimasu.) - I am looking forward to a new challenge."
+      },
+      {
+        "id": "word045",
+        "word": "価値",
+        "pronunciation": "kachi",
+        "meaning": "value, worth",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when discussing the importance or significance of something.",
+        "example": "その経験は大きな価値があります。 (sono keiken wa ookina kachi ga arimasu.) - That experience has great value."
+      },
+      {
+        "id": "word046",
+        "word": "機会",
+        "pronunciation": "kikai",
+        "meaning": "opportunity",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when talking about a chance to do something.",
+        "example": "素晴らしい機会をありがとうございます。 (subarashii kikai o arigatou gozaimasu.) - Thank you for the wonderful opportunity."
+      },
+      {
+        "id": "word047",
+        "word": "成長",
+        "pronunciation": "seichou",
+        "meaning": "growth",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when referring to personal or organizational development.",
+        "example": "失敗から成長することができます。 (shippai kara seichou suru koto ga dekimasu.) - You can grow from failures."
+      },
+      {
+        "id": "word048",
+        "word": "自信",
+        "pronunciation": "jishin",
+        "meaning": "confidence",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when expressing belief in one’s abilities.",
+        "example": "自信を持って行動しましょう。 (jishin o motte koudou shimashou.) - Let's act with confidence."
+      },
+      {
+        "id": "word049",
+        "word": "夢",
+        "pronunciation": "yume",
+        "meaning": "dream",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when discussing aspirations or goals.",
+        "example": "夢を叶えるために努力しています。 (yume o kanaeru tame ni doryoku shiteimasu.) - I am working hard to achieve my dream."
+      },
+      {
+        "id": "word050",
+        "word": "希望",
+        "pronunciation": "kibou",
+        "meaning": "hope",
+        "part_of_speech": "noun",
+        "difficulty": "medium",
+        "lesson_no": 5,
+        "when_to_say": "Used when expressing expectations for a positive outcome.",
+        "example": "希望を持ち続けることが大切です。 (kibou o mochitsuzukeru koto ga taisetsu desu.) - It is important to keep holding on to hope."
+      },
+      {
         "id": "word051",
         "word": "友達",
         "pronunciation": "tomodachi",
