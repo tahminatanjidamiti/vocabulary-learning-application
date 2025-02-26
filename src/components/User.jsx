@@ -15,12 +15,12 @@ const User = () => {
     return (
         <div className='my-20'>
             <div className="text-center items-center">
-                <h1 className="text-5xl font-bold">Know Our User Experience</h1>
+                <h1 className="text-5xl font-bold">Know Our User <span className='text-teal-600'>Experience</span></h1>
                 <p className="py-5 w-10/12 mx-auto">
                     Transform learning with interactive lessons, gamified challenges, real-life context, personalized progress tracking, and seamless vocabulary mastery—engaging, effective, unforgettable!
                 </p>
             </div>
-            <div className='md:container mx-auto mt-5 space-y-5 bg-teal-50 px-5 py-10 rounded-lg'>
+            <div className='md:container mx-auto mt-5 space-y-5 bg-blue-100 px-5 py-10 rounded-lg'>
                 <div className={`card card-side bg-base-100 shadow-x lg:w-6/12 mx-auto ${animate ? 'animate__animated animate__fadeInDown' : ''}`}>
                     <figure className='h-[200px]'>
                         <img className='w-full h-full object-cover'

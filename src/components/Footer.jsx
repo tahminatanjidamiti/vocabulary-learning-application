@@ -2,7 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-teal-50'>
+        <div className='bg-blue-100 relative'>
+            <div className="absolute inset-0 animate-neon-glow -z-10"></div>
             <footer className="footer text-base-content rounded p-10">
             <aside>
                 <form>

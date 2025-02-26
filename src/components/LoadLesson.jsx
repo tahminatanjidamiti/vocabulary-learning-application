@@ -21,9 +21,10 @@ const LoadLesson = () => {
 
     return (
         <div>
-            <div className='p-5 md:container mx-auto grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5'>
+            <div className='p-5 md:container mx-auto grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5 mb-4 relative'>
+            <div className="absolute inset-0 animate-neon-glow -z-10"></div>
                 {
-                        data.map(lesson => <NavLink  to={`/start_learning/${lesson.id}`} className={`btn border-none ${getButtonColor(lesson.difficulty)}`} key={lesson.id}>{`Lesson: ${lesson.lesson_no}`}</NavLink>)  
+                        data.map(lesson => <NavLink  to={`/start_learning/${lesson.id}`} className={`btn border-none text-black ${getButtonColor(lesson.difficulty)}`} key={lesson.id}>{`Lesson: ${lesson.lesson_no}`}</NavLink>)  
                 }
             </div>
         </div>

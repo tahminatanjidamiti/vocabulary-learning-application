@@ -2,7 +2,8 @@ import CountUp from 'react-countup';
 
 const Success = () => {
     return (
-        <div className='w-8/12 mx-auto py-10 my-10 bg-teal-50 rounded-3xl flex justify-center items-center'>
+        <div className='w-8/12 mx-auto py-10 my-20 bg-blue-100 rounded-3xl flex justify-center items-center relative'>
+            <div className="absolute inset-0 animate-neon-glow -z-10"></div>
             <div className="stats stats-vertical lg:stats-horizontal shadow">
             <div className="stat">
                 <div className="stat-title">Users</div>

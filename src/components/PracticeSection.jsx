@@ -7,7 +7,8 @@ const PracticeSection = () => {
         window.speechSynthesis.speak(utterance);
     };
     return (
-        <div className='my-20'>
+        <div className='my-10 py-5 relative'>
+            <div className="absolute inset-0 animate-neon-glow -z-10"></div>
             <div className='text-center items-center'>
                 <h1 className="text-5xl font-bold">Practice Makes Perfect</h1>
                 <p className="py-5 w-10/12 mx-auto">
